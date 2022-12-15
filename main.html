@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="./js/spotify_auth.js"></script>
+    <title>Discoverify</title>
+</head>
+<body onload="onPageLoad()">
+    
+    <div class="header">
+        <h1>Hello! Here are your top songs</h1>
+        <p> If songs are not loading, please reload the page</p>
+    </div>
+
+
+    <script>
+      TOP_TRACKS = createLists();
+      console.log("TOP TRACKS: ", TOP_TRACKS);
+    </script>
+
+    <div class="container">
+      <div class="tabs-header">
+        <h3 class="active">All Time</h3>
+        <h3>Past 6 Months</h3>
+        <h3>Past 4 Weeks</h3>
+      </div>
+
+      <div class="tab-content">
+        <div class="active" id="long_term">
+          <ol class="center"> </ol>
+        </div>
+        <div id="medium_term">
+          <ol class="center"> </ol>
+        </div>
+        <div id="short_term">
+          <ol class="center"></ol>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

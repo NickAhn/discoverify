@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* TODO: add Montserrat */
+}
+
+/* Background animations */
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg,#FDC094, #FF9190,  #5E72EB, #23d5ab);
+	background-size: 400% 500%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Tabs Style */
+.container {
+  width: 100vmin;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20%;;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tabs-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h3 {
+  background-color: #e4e9fd;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+
+.tab-content h4 {
+  font-size: 28px;
+}
+
+.tab-content p {
+  text-align: justify;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.tabs-header .active {
+  background-color: #ffffff;
+}
+
+
+
+ol {
+  margin: 1em;
+  margin-left: 10vh;
+}
+
+li {
+  margin: 10px;
+  font-size: 2em;
+}
+
+
+li img{
+  max-width: 100px;
+  margin-right: 1em;
+  top: 1em;
+}
